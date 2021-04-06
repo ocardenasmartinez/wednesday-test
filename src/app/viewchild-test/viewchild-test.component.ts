@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { TestService } from './../test-service/test-service.service';
 
 @Component({
   selector: 'app-viewchild-test',
@@ -10,13 +11,17 @@ export class ViewchildTestComponent implements OnInit {
   @ViewChild('user')
   user: ElementRef;
 
-  constructor() { }
+  constructor(private testService:TestService) { }
 
   ngOnInit(): void {
   }
 
   addUser() {
     console.log(this.user.nativeElement.value)
+  }
+
+  logMessage() {
+    this.testService.logMessage("hola")
   }
 
 }
