@@ -12,8 +12,9 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClickSubmit(data) {
-     alert("Entered Email id : " + data.emailid);
+  addEmail(email, password) {
+    console.log(email);
+    console.log(password);
   }
 
 }
