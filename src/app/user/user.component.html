@@ -5,8 +5,10 @@
    <br/>
    <button (click)="addEmail(email.value, password.value)">Add</button>
    <br/>
+   {{message}}
 </div>
 <app-user-list
   [email]="email.value"
-  [password]="password.value">
+  [password]="password.value"
+  (message)="receiveData($event)">
 </app-user-list>

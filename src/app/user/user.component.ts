@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
+  message: string;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +17,10 @@ export class UserComponent implements OnInit {
   addEmail(email, password) {
     console.log(email);
     console.log(password);
+  }
+
+  receiveData(data) {
+    this.message = "hola";
   }
 
 }
