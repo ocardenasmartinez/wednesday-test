@@ -20,7 +20,7 @@ export class UserComponent implements OnInit {
   }
 
   receiveData(data) {
-    this.message = "hola";
+    this.message = data;
   }
 
 }

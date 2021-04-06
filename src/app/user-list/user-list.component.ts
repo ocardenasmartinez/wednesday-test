@@ -20,7 +20,7 @@ export class UserListComponent implements OnInit {
   }
 
   sendMessage(): void {
-     this.message.emit("this.size");
+     this.message.emit("output example");
   }
 
 }
