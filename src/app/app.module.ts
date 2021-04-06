@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { ViewchildTestComponent } from './viewchild-test/viewchild-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    ViewchildTestComponent
   ],
   imports: [
     BrowserModule,

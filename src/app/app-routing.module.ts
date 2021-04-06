@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserComponent } from './user/user.component';
+import { ViewchildTestComponent } from './viewchild-test/viewchild-test.component';
 
 const routes: Routes = [
-	{ path: 'user', component: UserComponent }
+	{ path: 'user', component: ViewchildTestComponent }
 ];
 
 @NgModule({
